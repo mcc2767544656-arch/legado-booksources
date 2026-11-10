@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "根据新暖才文学网移动版页面结构制作。搜索使用 POST；目录分页通过目录页“下一页”链接；章节正文位于 #nr1。搜索结果选择器尚需在阅读 App 内实测，若网站改版需调整。",
+    "bookSourceGroup": "自制书源",
+    "bookSourceName": "新暖才文学网（xncwxw.net）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xncwxw.net/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": false,
+    "enabledCookieJar": false,
+    "enabledReview": false,
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1794352800000,
+    "respondTime": 180000,
+    "weight": 0,
+    "searchUrl": "https://m.xncwxw.net/s.php,{\n  \"method\": \"POST\",\n  \"charset\": \"utf-8\",\n  \"body\": \"keyword={{key}}\"\n}",
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": "class.recommend@tag.li",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "tag.img@src",
+      "intro": "class.intro@text",
+      "kind": "",
+      "lastChapter": "class.lastchapter@text",
+      "name": "class.title@text",
+      "wordCount": ""
+    },
+    "ruleBookInfo": {
+      "author": "class.tab@class.p1@text##作者：",
+      "coverUrl": "class.tu@tag.img@src",
+      "intro": "class.jj@class.p2@text",
+      "kind": "class.tab@class.p4@text",
+      "lastChapter": "class.info_chapters.0@tag.li@tag.a@text",
+      "name": "class.catalog1@tag.h1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.info_chapters.1@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.listpage@class.right@tag.a@href",
+      "formatJs": ""
+    },
+    "ruleContent": {
+      "content": "id.nr1@text",
+      "nextContentUrl": "id.pb_next@href",
+      "webJs": ""
+    }
+  }
+]
