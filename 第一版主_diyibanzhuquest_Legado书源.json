@@ -1,0 +1,48 @@
+{
+  "bookSourceComment": "根据 m.diyibanzhu.quest 当前移动版页面结构制作；搜索为 POST，目录与章节分页已配置。若站点改版需调整选择器。",
+  "bookSourceGroup": "自制书源",
+  "bookSourceName": "第一版主（diyibanzhu.quest）",
+  "bookSourceType": 0,
+  "bookSourceUrl": "https://m.diyibanzhu.quest/",
+  "customOrder": 0,
+  "enabled": true,
+  "enabledExplore": false,
+  "enabledCookieJar": false,
+  "enabledReview": false,
+  "header": "",
+  "lastUpdateTime": 1794352800000,
+  "respondTime": 180000,
+  "weight": 0,
+  "searchUrl": "https://m.diyibanzhu.quest/wap.php?action=search,{\n  \"method\": \"POST\",\n  \"charset\": \"utf-8\",\n  \"body\": \"wd={{key}}&objectType=2\"\n}",
+  "ruleSearch": {
+    "author": "class.info@text##作者：|字数：.*",
+    "bookList": "class.book-all-list@tag.li",
+    "bookUrl": "class.name@href",
+    "coverUrl": "",
+    "intro": "",
+    "kind": "",
+    "lastChapter": "class.update@tag.a@text",
+    "name": "class.name@text",
+    "wordCount": ""
+  },
+  "ruleBookInfo": {
+    "author": "class.detail@class.info@text##作者：|类型：.*",
+    "coverUrl": "class.detail@tag.img@src",
+    "intro": "class.book-intro@text",
+    "kind": "class.detail@class.info@text##作者：.*类型：|字数：.*",
+    "lastChapter": "class.chapter-list.0@tag.li@tag.a@text",
+    "name": "class.detail@tag.h1@text",
+    "wordCount": "class.detail@class.info@text##.*字数：|人气：.*"
+  },
+  "ruleToc": {
+    "chapterList": "class.chapter-list.1@tag.li",
+    "chapterName": "tag.a@text",
+    "chapterUrl": "tag.a@href",
+    "formatJs": ""
+  },
+  "ruleContent": {
+    "content": "id.nr1@text##本章未完.*",
+    "nextContentUrl": "class.chapterPages@tag.a.0@href",
+    "webJs": ""
+  }
+}
